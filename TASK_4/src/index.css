@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+}
+.container{
+    padding: 5% 2%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.col{
+    border-radius: 10px;
+    padding: 5% 2%;
+    margin-bottom: 2%;
+}
+.col-20{
+    width: 20%;
+    background: rgb(228, 187, 149);
+}
+.col-20 h4,.col-20 h4 p{
+    margin: 0 0 4% 0;
+}
+
+.col-50{
+    width: 50%;
+    background: rgb(141, 194, 141);
+}
+.col-50 h4,.col-50 h4 p{
+    margin: 0 0 2% 0;
+}
+
+.img-block{
+    display: flex;
+    justify-content: center;
+}
+.img-block img{
+    width: 100px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+p{
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 100;
+}
+p span{
+    font-weight: bold;
+}
+h4 span, h2 span{
+    font-weight: 100;
+}
+span.no_bold{
+    font-weight: 100;
+}
+
+
+h2{
+    font-size: clamp(20px, 2.2vw, 40px);
+}
+h4, h4 span, a, p {
+    font-size: clamp(15px, 1.6vw, 28px);
+}
+
+@media screen and (max-width: 1024px){
+    .col{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .row{
+        justify-content: center;
+    }
+    .col{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+}

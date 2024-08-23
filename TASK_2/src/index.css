@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    position: relative;
+}
+body::after{
+    content: "";
+    background: url(../Assets/education-pattern-background-doodle-style_53876-115365.avif);
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.navbar-nav{
+    width: 100%;
+}
+
+.nav-item{
+    background: rgb(198, 193, 193);
+    margin:0 0.5%;
+    border-radius: 20px;
+    padding: 0 0.5%;
+    display: flex;
+    align-items: center;
+}
+.nav-item.active {
+    background: #008000;
+}
+.nav-item > a{
+    font-weight: 500;
+    font-size: clamp(12px, 1.15vw, 16px);
+    color: rgb(33, 37, 41)
+}
+.nav-item.active > a{
+    color: white;
+}
+
+i{
+    margin:0 1%
+}
+.main-section{
+    margin: 0 1.6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.card-body + div a, .card-body a{
+    width: 100%;
+}
+.main-section .card{
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0 ,0.5);
+    border: none;
+}
+
+.card-body + div a{
+    font-weight: 500;
+    border-radius: unset;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card-body a{
+    border-radius: 20px;
+    background-color: #284728;
+    border: none;
+}
+.card-body div > img{
+    height: 200px;
+    aspect-ratio: 1;
+    object-position: top;
+    object-fit: cover;
+    border: 5px solid rgb(232, 229, 229);
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+.card-body div{
+    position: relative;
+}
+.p_info .card-body > div:hover::after{
+    cursor: pointer;
+}
+.p_info .card-body > div::after{
+    cursor: pointer;
+    font-size: 12px;
+    content:"\f303" ;
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    border: 2px solid rgb(194, 194, 194);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7px;
+    right: 30px;
+    background: #fff;
+}
+
+.col-2 > .card:first-child .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row .section_header{
+    padding-left: 0;
+}
+.section_header h5{
+    background: #284728;
+    color: #fff;
+    padding: 0.5% 1%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0;
+}
+.col-3{
+    padding: 0;
+
+}
+.second_section .icon_badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_courses .icon_badge{
+    display: flex;
+    align-items: center;
+}
+.icon_badge p{
+    margin-left: 2%;
+    margin-bottom: 0;
+}
+.icon_badge span{
+    background-color: rgb(26, 81, 126);
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+} 
+.second_section .exam-cart .col-3 > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.cart_wrapper{
+    background: rgb(203, 202, 202);
+    padding: 2%;
+}
+.icon_badge + a{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 1% 2%;
+}
+.second_section .exam-cart{
+    margin-bottom: 1.5%;
+}
+.second_section .exam-cart .col-3{
+    padding: 1%;
+    margin: 0 0.5% 1%;
+    background: #fff;
+    border-radius: 20px;
+    width: 24%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0 ,0.2);
+}
+.info_courses > div{
+    padding: 0;
+    margin: 0 0.5%;
+}
+.info_courses .col-3 card{
+    border: none;
+}
+.white_bg div a{
+    background: rgb(183, 206, 183);
+    color: #284728;
+    border: 1px solid rgb(183, 206, 183)
+}
+.info_courses .col-3 .card-body{
+    padding-bottom: 0;
+}
+.info_courses .white_bg > .card:hover{
+    background: rgb(128, 171, 128);
+    cursor: pointer;
+}
+.info_courses .white_bg > .card:hover div a{
+    background: #fff;
+    color: #000;
+    border: 1px solid rgb(255, 255, 255)
+}
+.info_courses{
+    justify-content: space-between;
+    padding: 0 11px;
+    margin-bottom: 2%;
+}
+.info_courses .green_bg{
+    background: transparent;
+}
+
+.second_section .exam-cart .col-3 h6 + span{
+    background-color: rgb(163, 202, 163);
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.second_section .exam-cart .col-3 h6 + span + div{
+    margin-top: 4%;
+}
+
+.second_section {
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0 ,0.2);
+}
+.cart_wrapper {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.col-2.p_info h5{
+    font-size: clamp(14px, 1.6vw, 25px);
+}
+.col-2.p_info a{
+    font-size: clamp(13px, 1.3vw, 18px);
+}
+.info_courses .col-3 .icon_badge{
+    align-items: center;
+    margin-bottom: 4%;
+}
+.info_courses .col-3 .icon_badge p{
+    font-size: 12px;
+}
+
+.info_courses .col-3 .icon_badge span{
+    height: 20px;
+    width: 20px;
+}
+.info_courses .col-3 .icon_badge span i {
+    font-size: 8px;
+}
+.info_courses .col-3 h3{
+    font-size: clamp(14px, 1.35vw, 19px);
+}
+.info_courses .col-3 h5{
+    font-size: clamp(14px, 1.7vw, 22px);
+    margin-bottom: 0;
+}
+.info_courses .col-3 h6{
+    color: rgb(58, 82, 23);
+    font-weight: bold;
+    font-size: clamp(14px, 1.3vw, 17px);
+}
+.info_courses .col-3 p{
+    font-size: clamp(12px, 1.15vw, 16px);
+    line-height: 22px;
+}
+.info_courses .col-3 a{
+    font-size: clamp(13px, 1.1vw, 15px);
+}
+.second_section .section_header h5{
+    font-size: clamp(13px, 1.31vw, 18px);
+}
+.second_section .icon_badge p{
+    font-size: clamp(13px, 1.1vw, 15px);
+}
+.second_section .icon_badge i{
+    font-size: 10px;
+}
+.second_section .icon_badge + a{
+    font-size: clamp(11px, 1.1vw, 15px);
+}
+.second_section h6{
+    font-size: clamp(12px, 1.02vw, 14px);
+}
+.second_section h6 + span{
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .card-body div > img{
+        height: 180px;
+    }
+    .p_info .card-body > div::after {
+        top: 3px;
+    }
+    .cart_wrapper .progress,.cart_wrapper .progress-stacked{
+        height: 0.9rem ;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .card-body div > img{
+        height: 160px;
+    }
+    .cart_wrapper .progress,.cart_wrapper .progress-stacked{
+        height: 0.8rem ;
+    }
+}
+@media screen and (max-width: 1024px){
+    .info_courses > div .card{
+        height: 100%;
+    }
+    .card-body div > img{
+        height: 130px;
+    }
+    .col-3 .card-body{
+        padding: 4%;
+    }
+    .card-body p{
+        margin-bottom: 2%;
+    }
+    .p_info .card-body > div::after {
+        top: 10px;
+        right: 8px;
+    }
+    .cart_wrapper .progress,.cart_wrapper .progress-stacked{
+        height: 0.7rem ;
+    }
+    .second_section h6 + span {
+        font-size: 11px;
+    }
+    /*  */
+    .info_courses > div{
+        width: 45%;
+        margin-bottom: 5%;
+    }
+    .col-2.p_info a{
+        width: 60%;
+    }
+    .info_courses .col-3 .icon_badge p{
+        margin-bottom: 0;
+    }
+    .second_section .exam-cart{
+        justify-content: center;
+    }
+    .second_section .exam-cart .col-3{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 991px){
+    .nav-item{
+        border-radius: unset;
+        border-bottom: 1px solid #fff;
+    }
+    .navbar-collapse.show{
+        margin-top: 1px;
+    }
+    .navbar-collapse.show ul > li:first-child{
+        border-top-right-radius: 20px;
+    }
+    .navbar-collapse.show ul > li:last-child{
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 829px){
+    
+    .card-body div > img {
+        height: 120px;
+    }
+    .p_info .card-body > div::after {
+        right: 4px;
+    }
+    .second_section h6 + span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 802px){
+    .col-2 > .card:first-child .card-body{
+        padding: 6%;
+    }
+    .cart_wrapper .progress,.cart_wrapper .progress-stacked{
+        height: 0.5rem ;
+    }
+}
+@media screen and (max-width: 414px){
+    .info_courses {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+     .second_section{
+        width: 87%
+     }
+    .info_courses{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info_courses > div{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .second_section .section_header h5  {
+        text-align: center;
+    }
+    .second_section .cart_wrapper .exam-cart > div{
+        width: 85%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }   
+    .second_section .cart_wrapper{
+        padding-top: 20px;
+    }
+    .second_section .cart_wrapper .exam-cart{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item{
+        padding-left: 10px;
+    }
+}
